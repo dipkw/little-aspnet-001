@@ -5,9 +5,10 @@
 $(document).ready(function() {
     // Wire up all of the checkboxes to run markCompleted()
     $('.done-checkbox').on('click', function(e) {
-    markCompleted(e.target);
+        markCompleted(e.target);
     });
     });
+
     function markCompleted(checkbox) {
     checkbox.disabled = true;
     var row = checkbox.closest('tr');
